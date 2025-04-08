@@ -1,3 +1,5 @@
+![Screenshot](screenshot.png)
+
 **Episode/Project Title:** [Insert Episode/Project Title Here]
 
 **Web Series Title:** Coding for Impact: Real-World Python Solutions
@@ -100,12 +102,6 @@
 ### License:
 
 * MIT
-
----
-
-### Call to Action:
-
-* [Encourage viewers to like, subscribe, comment, share the video, and star the GitHub repository.]
 
 ---
 
