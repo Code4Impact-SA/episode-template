@@ -1,4 +1,4 @@
-![Screenshot of App](screenshot.png)  **Episode/Project Title:** Building a SASSA SRD Status Notifier App
+![Screenshot of App](screenshot.jpg)  **Episode/Project Title:** Building a SASSA SRD Status Notifier App
 
 **Web Series Title:** Coding for Impact: Real-World Python Solutions
 
