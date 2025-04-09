@@ -27,5 +27,5 @@ console_command = "/app/manage.py shell"
   url_prefix = "/static/"
 
 [mounts]
-  source="rd_backend_data"
+  source="code_for_impact_data"
   destination="/app/data/"
