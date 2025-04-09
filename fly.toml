@@ -1,0 +1,31 @@
+# fly.toml app configuration file generated for rd-backend on 2023-07-29T18:33:35+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "code-for-impact-episode-1"
+primary_region = "jnb"
+console_command = "/app/manage.py shell"
+
+[processes]  
+  app = "/bin/bash /app/entrypoint.sh"
+  worker = "python -m celery -A code_for_impact worker -l info --beat"
+
+[env]
+  PORT = "8000"
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+[[statics]]
+  guest_path = "/app/static"
+  url_prefix = "/static/"
+
+[mounts]
+  source="rd_backend_data"
+  destination="/app/data/"
